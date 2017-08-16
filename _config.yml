@@ -4,7 +4,6 @@
 
 # Site
 title: Odigia
-subtitle: Rouwbegeleiding op maat
 author: Ilse Vanderheyden
 language: nl
 timezone: Europe/Brussels
@@ -19,25 +18,12 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Odigia | Rouwbegeleiding
-email: ilse@odigia.be
-description: "Rouwbegeleiding"
-keyword: ""
-header-img: img/header_img/kalmthoutse_heide.jpg
+SEOTitle: "Odigia | Rouwbegeleiding"
+email: "ilse@odigia.be"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis dolor et magna bibendum, eu elementum erat ornare. Vivamus vel efficitur justo."
+keyword: "odigia rouwbegeleiding"
+header-img: "img/header_img/kalmthoutse_heide_2.jpg"
 signature: false #show signature
-
-# Build settings
-anchorjs: false # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Disqus settings
-#disqus_username: your-disqus-ID
-
-# Duoshuo settings
-# duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false # set to false if you want to use Comment without Sharing
-
 
 # Analytics settings
 # Baidu Analytics
@@ -75,9 +61,6 @@ friends: []
 
 
 #Custom Setting End
-
-logo_icon: img/logo.png
-
 
 # Directory
 source_dir: source

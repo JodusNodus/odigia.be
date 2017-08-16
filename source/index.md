@@ -1,5 +1,5 @@
 ---
-layout: "about"
+layout: "index"
 title: "Rouwbegeleiding op Maat"
 date: 2016-04-21 04:48:33
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis dolor et magna bibendum, eu elementum erat ornare. Vivamus vel efficitur justo."

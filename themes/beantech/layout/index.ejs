@@ -1,56 +1,81 @@
 ---
-layout: page
+layout: layout
 ---
 <!-- Main Content -->
+<div class="container">
+    <div class="row">
+    <!-- Post Container -->
+          <div class="
+              col-lg-8 col-lg-offset-1
+              col-md-8 col-md-offset-1
+              col-sm-12
+              col-xs-12
+              post-container
+          ">
+          
+          <h1>Aliquam id scelerisque enim</h1>
+          <p>Praesent elementum justo ac lacus laoreet volutpat nec laoreet enim. Integer et tincidunt elit, sed pulvinar metus. Vestibulum placerat tellus a ante maximus, et dictum justo dignissim. Curabitur posuere justo nibh. Nunc condimentum augue ut nunc gravida, eget dignissim orci feugiat. Sed efficitur ac diam id vestibulum. Maecenas quis tortor eu enim sagittis dapibus. Nam ante neque, fringilla in leo commodo, iaculis tristique nulla. Nam est tortor, placerat nec rhoncus posuere, tincidunt vel metus. Etiam consectetur lorem vel quam sollicitudin semper.</p>
 
-<% page.posts.each(function(post){ %>
-<div class="post-preview">
+          <h2>Vestibulum nec tempus purus</h2>
+          <p>Id blandit magna. Phasellus non finibus mauris. Nunc eu magna ultrices, lobortis lorem a, gravida felis. Cras ut nulla et mauris blandit blandit. Nullam mauris arcu, lobortis eget nulla in, auctor scelerisque purus. Vivamus porttitor vitae elit vitae malesuada. Aliquam posuere porttitor odio, id eleifend massa blandit at. Ut aliquam sodales leo, non sodales leo malesuada eu. Phasellus aliquet risus tellus, sed eleifend dui scelerisque at. Donec eget leo tempor, bibendum mi a, mattis eros.</p>
 
-    <a href="<%- config.root %><%- post.path %>">
-        <h2 class="post-title">
-            <%- post.title || "Untitled" %>
-        </h2>
-        <h3 class="post-subtitle">
-            <%- post.subtitle || "" %>
-        </h3>
-        <div class="post-content-preview">
-            <%- truncate(strip_html(post.content), {length: 200, omission: '...'}) %>...
-        </div>
-    </a>
-    <% if (config.home_posts_tag){%>
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by <%- post.author || config.author %> on
-            <%= post.date.format(config.date_format) %>
-        </p>
-        <div class="tags">
-            <% post.tags.forEach(function(tag){ %>
-              <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
-            <% }) %>
-        </div>
-    <%} else {%>
-        <p class="post-meta">
-            Posted by <%- post.author || config.author %> on
-            <%= post.date.format(config.date_format) %>
-        </p>
-    <%}%>
+          </div>
 
+        <%- partial('_partial/sidebar') %>
+    </div>
 </div>
-<hr>
-<% }); %>
+<!-- Main Content -->
 
+<style>
+  .contact-container {
+    background-color: #4D6A6D;
+    margin-top: 50px;
+    padding: 30px 0;
+    color: white;
+  }
+  .contact-container a {
+    color: #EAE0CC;
+    text-decoration: underline;
+  }
+  .gmap {
+    height: 300px;
+    width: 100%;
+    border: 0;
+    background-color: #00000040;
+  }
+  .contact-row {
+    position: relative;
+  }
+</style>
 
-<!-- Pager -->
-
-<ul class="pager">
-    <% if (page.prev){ %>
-        <li class="previous">
-            <a href="<%- config.root %><%- page.prev_link %>">&larr; Newer Posts</a>
-        </li>
-    <% } %>
-    <% if (page.next){ %>
-        <li class="next">
-            <a href="<%- config.root %><%- page.next_link %>">Older Posts &rarr;</a>
-        </li>
-    <% } %>
-</ul>
-
+<div class="contact-container">
+  <div class="container">
+      <div class="row contact-row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9961.568367329382!2d4.44747470388752!3d51.3774714279157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c40f102f89547b%3A0x7c3c9313e74fda6b!2sKinderwelzijnstraat+73%2C+2920+Kalmthout!5e0!3m2!1sen!2sbe!4v1502794994827" class="gmap" frameborder="0"></iframe>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-xs-2">
+              Address
+            </div>
+            <div class="col-xs-8">
+              Kinderwelzijnstraat 73<br>
+              2920 Kalmthout
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              Tel<br>
+              Email
+            </div>
+            <div class="col-xs-8">
+              <a href="tel:0476514840">0476 51 48 40</a><br/>
+              <a href="mailto:ilse@odigia.be">ilse@odigia.be</a><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
