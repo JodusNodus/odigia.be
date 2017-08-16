@@ -4,128 +4,70 @@ layout: layout
 <!-- Main Content -->
 <div class="container">
     <div class="row">
-        <% if(config.sidebar == false) { %>
-<!-- NO SIDEBAR -->
     <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-                <%- page.content || body %>
-            </div>
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
+          <div class="
+              col-lg-8 col-lg-offset-1
+              col-md-8 col-md-offset-1
+              col-sm-12
+              col-xs-12
+              post-container
+          ">
+          
+              <%- page.content || body %>
 
-                <!-- Featured Tags -->
-                <% if(config['featured-tags']) { %>
-                <section>
-                    <!-- no hr -->
-                    <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        <% site.tags.map(function(tag){  %>
-                            <% if(tag.length > config['featured-condition-size']) { %>
-                            <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"><%= tag.name %></a>
-                            <% } %>
-                        <% }) %>
-                    </div>
-                </section>
-                <% }%>
+          </div>
 
-
-                <!-- Friends Blog -->
-                <% if(config.friends) { %>
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-
-                    <% config.friends.forEach(function(friend){ %>
-                        <li><a href="<%= friend.href %>"><%= friend.title %></a></li>
-                    <% }); %>
-                </ul>
-                <% }%>
-            </div>
-        <%} else { %>
-
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <%- page.content || body %>
-
-                <!-- 如果开启评论功能 -->
-                <% if(page.comments) { %>
-                    <hr>
-
-                    <% if(config['duoshuo_username']) { %>
-                    <!-- 多说评论框 start -->
-                    <div class="comment">
-                        <div class="ds-thread"
-                            data-thread-key="<%= page.path %>"
-                            data-title="<%= page.title %>"
-                            data-url="<%= page.permalink %>" >
-                        </div>
-                    </div>
-                    <!-- 多说评论框 end -->
-                    <% } %>
-
-                    <% if(config['disqus_username']) { %>
-                    <!-- disqus 评论框 start -->
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                    <!-- disqus 评论框 end -->
-                    <% } %>
-
-
-                    <% if(config['duoshuo_username']) { %>
-                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                        // dynamic User by Hux
-                        var _user = '<%= config['duoshuo_username'] %>';
-
-                        // duoshuo comment query.
-                        var duoshuoQuery = {short_name: _user };
-                        (function() {
-                            var ds = document.createElement('script');
-                            ds.type = 'text/javascript';ds.async = true;
-                            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                            ds.charset = 'UTF-8';
-                            (document.getElementsByTagName('head')[0]
-                             || document.getElementsByTagName('body')[0]).appendChild(ds);
-                        })();
-                    </script>
-                    <!-- 多说公共JS代码 end -->
-                    <% } %>
-
-                    <% if(config['disqus_username']) { %>
-                    <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        var disqus_shortname = "<%= config['disqus_username'] %>";
-                        var disqus_identifier = "<%= page.permalink %>";
-                        var disqus_url = "<%= page.permalink %>";
-
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-
-                        
-                    </script>
-                    <!-- disqus 公共JS代码 end -->
-                    <% } %>
-                <% } %>
-            </div>
-
-          <%- partial('_partial/sidebar') %>
-
-        <%} %>
+        <%- partial('_partial/sidebar') %>
     </div>
+</div>
+<!-- Main Content -->
+
+<style>
+  .contact-container {
+    background-color: #0085a1a0;
+    margin-top: 50px;
+    padding: 30px 0;
+    color: white;
+  }
+  .gmap {
+    height: 300px;
+    width: 100%;
+    border: 0;
+    background-color: #00000040;
+  }
+  .contact-row {
+    position: relative;
+  }
+</style>
+
+<div class="contact-container">
+  <div class="container">
+      <div class="row contact-row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9961.568367329382!2d4.44747470388752!3d51.3774714279157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c40f102f89547b%3A0x7c3c9313e74fda6b!2sKinderwelzijnstraat+73%2C+2920+Kalmthout!5e0!3m2!1sen!2sbe!4v1502794994827" class="gmap" frameborder="0"></iframe>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-xs-2">
+              Address
+            </div>
+            <div class="col-xs-8">
+              Kinderwelzijnstraat 73<br>
+              Kalmthout, 2920
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              Tel<br>
+              Email
+            </div>
+            <div class="col-xs-8">
+              <a href="tel:0476514840">0476 51 48 40</a><br/>
+              <a href="mailto:ilse@odigia.be">ilse@odigia.be</a><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>

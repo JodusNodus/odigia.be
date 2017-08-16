@@ -1,22 +1,14 @@
 ---
-title: "[Hexo] Theme BeanTech"
-catalog: true
+title: "Begrafenisdienst"
 date: 2017-03-18 10:51:24
 subtitle: "This is hexo theme Demo."
 header-img: "Demo.png"
-tags:
-- Hexo
-- Blog
-catagories:
-- Hexo
+
 ---
 > Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
 > 
 > This BeanTech theme created by [YuHsuan](http://beantech.org) modified from the original Porter [Kaijun](http://kaijun.rocks/hexo-theme-huxblog/)
 
-# [Live Demo](http://beantech.org)
----
-![BeanTech Desktop](http://beantech.org/img/beantech-desktop.png)
 
 # Usage
 ---
