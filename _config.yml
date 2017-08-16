@@ -137,4 +137,4 @@ sitemap:
 deploy:
   type: git
   repository: https://github.com/JodusNodus/odigia.be.git
-  branch: master
+  branch: gh-pages
