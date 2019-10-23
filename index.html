@@ -149,7 +149,7 @@
             <div class="short-about">
               <img
                 id="avatar_pic"
-                alt="A portrait picture of Ilse Vanderheyden"
+                alt="Een portret foto van mezelf"
                 src="/img/about.jpg"
               />
               <p style="margin: 0;"><b>Ilse Vanderheyden</b></p>
@@ -158,6 +158,30 @@
                 ritueelbegeleider - verbindend - zorgzaam – integer – zoekend
               </p>
             </div>
+          </section>
+          <section class="visible-md visible-lg in-media">
+            <h5 style="margin: 0;">IN DE MEDIA</h5>
+            <a
+              href="https://www.flair.be/nl/lifestyle/rouwen-euthanasie/"
+              target="_blank"
+            >
+              <img
+                alt="Flair logo"
+                src="img/flair_logo.png"
+                class="media-logo"
+              />
+              <p>
+                Rouwen bij euthanasie: ‘Dat de patiënt vrede heeft met zijn
+                levenseinde, is voor nabestaanden vaak een geruststellende
+                gedachte’
+              </p>
+            </a>
+            <a href="https://www.een.be/komen-te-gaan" target="_blank">
+              <img alt="Een logo" src="img/een_logo.png" class="media-logo" />
+              <p>
+                Komen te gaan: Aflevering 2
+              </p>
+            </a>
           </section>
         </div>
       </div>
@@ -244,17 +268,10 @@
         padding-bottom: 1em;
         text-transform: uppercase;
       }
-      .sidebar-container h5 a {
-        color: grey !important;
-        text-decoration: none;
-      }
-      .sidebar-container a {
-        color: #bfbfbf !important;
-      }
-      .sidebar-container a:active,
+      /* .sidebar-container a:active,
       .sidebar-container a:hover {
         color: #0085a1 !important;
-      }
+      } */
       .sidebar-container .short-about img {
         width: 80%;
         display: block;
@@ -485,8 +502,7 @@
         margin: 1.5em auto 1.6em auto;
       }
       #avatar_pic {
-        max-height: 200px;
-        max-width: 200px;
+        width: 100%;
       }
 
       .contact-container {
@@ -510,7 +526,7 @@
       }
 
       header.intro-header {
-        background-image: url("/img/header_img/kalmthoutse_heide_2.jpg");
+        background-image: url("/img/kalmthoutse_heide.jpg");
       }
 
       #logo {
@@ -519,6 +535,18 @@
         top: 10px;
         left: 20px;
         opacity: 0.8;
+      }
+
+      .in-media a {
+        display: block;
+        text-decoration: underline;
+      }
+      .in-media p {
+        margin-top: 5px;
+      }
+
+      .media-logo {
+        width: 60px;
       }
     </style>
     <script
