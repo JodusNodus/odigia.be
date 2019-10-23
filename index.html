@@ -27,8 +27,6 @@
       rel="stylesheet"
     />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/beantech.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:400,700"
       rel="stylesheet"
@@ -36,12 +34,6 @@
   </head>
 
   <body>
-    <style type="text/css">
-      header.intro-header {
-        background-image: url("/img/header_img/kalmthoutse_heide_2.jpg");
-      }
-    </style>
-
     <header class="intro-header">
       <div id="signature">
         <div class="container">
@@ -64,15 +56,7 @@
 
     <nav>
       <div>
-        <img id="logo" src="/img/logo_light.svg" />
-        <style>
-          #logo {
-            position: absolute;
-            height: 80px;
-            top: 10px;
-            left: 20px;
-          }
-        </style>
+        <img id="logo" alt="odigia logo" src="/img/logo_light.svg" />
       </div>
     </nav>
 
@@ -158,7 +142,11 @@
           <section class="visible-md visible-lg">
             <h5>OVER MEZELF</h5>
             <div class="short-about">
-              <img id="avatar_pic" src="/img/about.jpg" />
+              <img
+                id="avatar_pic"
+                alt="A portrait picture of Ilse Vanderheyden"
+                src="/img/about.jpg"
+              />
               <p style="margin: 0;"><b>Ilse Vanderheyden</b></p>
               <p>
                 1968 - vrouw – moeder – partner – rouwtherapeut – voorganger –
@@ -170,57 +158,47 @@
       </div>
     </div>
 
-    <style>
-      .contact-container {
-        background-color: #4d6a6d;
-        margin-top: 50px;
-        padding: 30px 0;
-        color: white;
-      }
-      .contact-container a {
-        color: #eae0cc;
-        text-decoration: underline;
-      }
-      .gmap {
-        height: 300px;
-        width: 100%;
-        border: 0;
-        background-color: #00000040;
-      }
-      .contact-row {
-        position: relative;
-      }
-    </style>
-
     <div class="contact-container">
       <div class="container">
-        <div class="row contact-row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9961.568367329382!2d4.44747470388752!3d51.3774714279157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c40f102f89547b%3A0x7c3c9313e74fda6b!2sKinderwelzijnstraat+73%2C+2920+Kalmthout!5e0!3m2!1sen!2sbe!4v1502794994827"
-              class="gmap"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h3>Contact</h3>
+        <div class="row">
+          <div
+            class="
+          col-lg-11 col-lg-offset-1
+          col-md-11 col-md-offset-1
+          col-sm-12
+          col-xs-12
+        "
+          >
             <div class="row">
-              <div class="col-xs-2">
-                Adres
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <iframe
+                  title="A map with the location of Odigia"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9961.568367329382!2d4.44747470388752!3d51.3774714279157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c40f102f89547b%3A0x7c3c9313e74fda6b!2sKinderwelzijnstraat+73%2C+2920+Kalmthout!5e0!3m2!1sen!2sbe!4v1502794994827"
+                  class="gmap"
+                  frameborder="0"
+                ></iframe>
               </div>
-              <div class="col-xs-8">
-                Kinderwelzijnstraat 73<br />
-                2920 Kalmthout
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-2">
-                Telefoon<br />
-                E-mail
-              </div>
-              <div class="col-xs-8">
-                <a href="tel:0476514840">0476 51 48 40</a><br />
-                <a href="mailto:ilse@odigia.be">ilse@odigia.be</a><br />
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3>Contact</h3>
+                <div class="row">
+                  <div class="col-xs-2">
+                    Adres
+                  </div>
+                  <div class="col-xs-8">
+                    Kinderwelzijnstraat 73<br />
+                    2920 Kalmthout
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-2">
+                    Telefoon<br />
+                    E-mail
+                  </div>
+                  <div class="col-xs-8">
+                    <a href="tel:0476514840">0476 51 48 40</a><br />
+                    <a href="mailto:ilse@odigia.be">ilse@odigia.be</a><br />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -232,7 +210,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <p class="copyright text-muted">
+            <p class="copyright">
               Copyright &copy; Ilse Vanderheyden 2018
             </p>
           </div>
@@ -240,6 +218,304 @@
       </div>
     </footer>
 
+    <style>
+      @media (min-width: 1200px) {
+        .post-container,
+        .sidebar-container {
+          padding-right: 5%;
+        }
+      }
+      @media (min-width: 768px) {
+        .post-container {
+          padding-right: 5%;
+        }
+      }
+      .sidebar-container {
+        color: grey;
+        font-size: 14px;
+      }
+      .sidebar-container h5 {
+        color: grey;
+        padding-bottom: 1em;
+        text-transform: uppercase;
+      }
+      .sidebar-container h5 a {
+        color: grey !important;
+        text-decoration: none;
+      }
+      .sidebar-container a {
+        color: #bfbfbf !important;
+      }
+      .sidebar-container a:active,
+      .sidebar-container a:hover {
+        color: #0085a1 !important;
+      }
+      .sidebar-container .short-about img {
+        width: 80%;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .sidebar-container .short-about p {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      body {
+        font-family: Lato, sans-serif;
+        line-height: 1.7;
+        font-size: 16px;
+        color: #404040;
+        overflow-x: hidden;
+      }
+      p {
+        margin: 30px 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 1.7;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 21px;
+      }
+      a {
+        color: #404040;
+      }
+      a:focus,
+      a:hover {
+        color: #0085a1;
+      }
+      a img:focus,
+      a img:hover {
+        cursor: zoom-in;
+      }
+      hr.small {
+        max-width: 100px;
+        margin: 15px auto;
+        border-width: 4px;
+      }
+      .post-container a {
+        color: #337ab7;
+      }
+      .post-container a:focus,
+      .post-container a:hover {
+        color: #0085a1;
+      }
+      .post-container h1,
+      .post-container h2,
+      .post-container h3,
+      .post-container h4,
+      .post-container h5,
+      .post-container h6 {
+        font-family: Bitter, serif;
+        font-weight: 400;
+        margin: 30px 0 10px;
+      }
+      .post-container h5 {
+        font-size: 19px;
+        font-weight: 600;
+        color: gray;
+      }
+      .post-container h5 + p {
+        margin-top: 5px;
+      }
+      .post-container h6 {
+        font-size: 16px;
+        font-weight: 600;
+        color: gray;
+      }
+      .post-container h6 + p {
+        margin-top: 5px;
+      }
+      .intro-header {
+        background: no-repeat center center;
+        background-color: grey;
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        margin-bottom: 0;
+      }
+      @media only screen and (min-width: 768px) {
+        .intro-header {
+          margin-bottom: 20px;
+        }
+      }
+      .intro-header .page-heading,
+      .intro-header .post-heading,
+      .intro-header .site-heading {
+        padding: 85px 0 55px;
+        color: #fff;
+      }
+      @media only screen and (min-width: 768px) {
+        .intro-header .page-heading,
+        .intro-header .post-heading,
+        .intro-header .site-heading {
+          padding: 150px 0;
+        }
+      }
+      .intro-header .site-heading {
+        padding: 95px 0 70px;
+      }
+      @media only screen and (min-width: 768px) {
+        .intro-header .site-heading {
+          padding: 150px 0;
+        }
+      }
+      .intro-header .page-heading,
+      .intro-header .site-heading {
+        text-align: center;
+      }
+      .intro-header .page-heading h1,
+      .intro-header .site-heading h1 {
+        font-family: Bitter, serif;
+        font-weight: 400;
+        margin-top: 0;
+        font-size: 4rem;
+      }
+      .intro-header .page-heading .subheading,
+      .intro-header .site-heading .subheading {
+        line-height: 1.7;
+        font-size: 18px;
+        line-height: 1.1;
+        display: block;
+        font-weight: 300;
+        margin: 10px 0 0;
+      }
+      @media only screen and (min-width: 768px) {
+        .intro-header .page-heading h1,
+        .intro-header .site-heading h1 {
+          font-size: 6.5rem;
+        }
+      }
+      .intro-header .post-heading h1 {
+        font-size: 30px;
+        margin-bottom: 24px;
+      }
+      .intro-header .post-heading .meta,
+      .intro-header .post-heading .subheading {
+        line-height: 1.1;
+        display: block;
+      }
+      .intro-header .post-heading .subheading {
+        line-height: 1.7;
+        font-size: 17px;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 10px 0 30px;
+        margin-top: -5px;
+      }
+      .intro-header .post-heading .meta {
+        font-family: Lora, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .intro-header .post-heading .meta a {
+        color: #fff;
+      }
+      @media only screen and (min-width: 768px) {
+        .intro-header .post-heading h1 {
+          font-size: 55px;
+        }
+        .intro-header .post-heading .subheading {
+          font-size: 30px;
+        }
+        .intro-header .post-heading .meta {
+          font-size: 20px;
+        }
+      }
+      .section-heading {
+        font-size: 36px;
+        margin-top: 60px;
+        font-weight: 700;
+      }
+      footer {
+        font-size: 20px;
+        padding: 50px 0 65px;
+      }
+      footer .copyright {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      footer .copyright a {
+        color: #337ab7;
+      }
+      footer .copyright a:focus,
+      footer .copyright a:hover {
+        color: #0085a1;
+      }
+      ::-moz-selection {
+        color: #fff;
+        text-shadow: none;
+        background: #4d6a6d;
+      }
+      ::selection {
+        color: #fff;
+        text-shadow: none;
+        background: #4d6a6d;
+      }
+      img::selection {
+        color: #fff;
+        background: 0 0;
+      }
+      img::-moz-selection {
+        color: #fff;
+        background: 0 0;
+      }
+      body {
+        webkit-tap-highlight-color: #4d6a6d;
+      }
+      .post-container img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 1.5em auto 1.6em auto;
+      }
+      #avatar_pic {
+        max-height: 200px;
+        max-width: 200px;
+      }
+
+      .contact-container {
+        background-color: #4d6a6d;
+        margin-top: 50px;
+        padding: 30px 0;
+        color: white;
+      }
+      .contact-container a {
+        color: #fcf6ea;
+        text-decoration: underline;
+      }
+      .gmap {
+        height: 300px;
+        width: 100%;
+        border: 0;
+        background-color: #00000040;
+      }
+      .contact-row {
+        position: relative;
+      }
+
+      header.intro-header {
+        background-image: url("/img/header_img/kalmthoutse_heide_2.jpg");
+      }
+
+      #logo {
+        position: absolute;
+        height: 80px;
+        top: 10px;
+        left: 20px;
+        opacity: 0.8;
+      }
+    </style>
     <script
       async
       src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
